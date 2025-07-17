@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+/* shared style */
+
+.display-flex {
+    display: flex;
+}
+
+.text-dark2 {
+    color: rgb(66, 66, 66);
+}
+
+.text-dark3 {
+    color: rgb(114, 114, 114);
+}
+
+.bg-color {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.btn-primary {
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 144, 14);
+    padding: 20px 25px;
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    border: none;
+
+}
+
+/* nav bar */
+
+.navbar {
+    justify-content: space-between;
+
+}
+
+.nav-items {
+    list-style: none;
+
+}
+
+.nav-links {
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar,
+.banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Banner */
+
+.banner-content {
+    max-width: 862px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-content-title {
+    text-align: center;
+    color: rgb(19, 19, 19);
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.banner-image {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* our feature */
+.feature-container {
+    max-width: 1440px;
+    display: flex;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    
+}
+.feature-images-container img{
+    border-radius: 8px;
+}
+
+.feature-images-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.feature-description {
+    max-width: 537px;
+
+}
+
+.feature-description-title {
+    font-size: 2.6rem;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+.Features{
+    color: rgb(255, 144, 14);
+}
+
+/* Small device */
+
+@media screen and (max-width: 576px) {
+
+    .navbar,
+    .nav-items {
+        flex-direction: column;
+    }
+
+    .navbar {
+        text-align: center;
+    }
+}
