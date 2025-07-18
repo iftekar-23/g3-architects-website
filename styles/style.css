@@ -90,10 +90,11 @@
     align-items: center;
     justify-content: space-around;
     gap: 10px;
-    
-    
+
+
 }
-.feature-images-container img{
+
+.feature-images-container img {
     border-radius: 8px;
 }
 
@@ -117,9 +118,75 @@
     font-weight: 500;
     margin-bottom: 0px;
 }
-.Features{
+
+.Features {
     color: rgb(255, 144, 14);
 }
+
+/* Enjoyable-feature-container */
+.Enjoyable-feature-container {
+    max-width: 1440px;
+    margin: 20px auto;
+    
+    gap: 140px;
+}
+
+/* .Enjoyable-feature-images-container {
+    width: 100%;
+}
+
+.Enjoyable-feature-images-container img{
+    width: 100%;
+} */
+
+.Enjoyable-feature-title {
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 2.7rem;
+    font-weight: 700;
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 21px;
+    margin-bottom: 0;
+}
+
+.Enjoyable-feature-content {
+    max-width: 586px;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.Enjoyable-feature-content-title {
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.experience {
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 144, 14);
+    padding: 45px 42px;
+    border: none;
+    font-size: 1.5rem;
+    margin-left: -100px;
+    margin-top: -120px;
+}
+
+.experience span {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+
+
+
+
 
 /* Small device */
 
@@ -127,20 +194,43 @@
 
     .navbar,
     .nav-items,
-    .feature-container {
+    .feature-container,
+    .Enjoyable-feature-container {
         flex-direction: column;
     }
-    .feature-images-container{
+
+    .feature-images-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .navbar {
         text-align: center;
     }
+
+    .Enjoyable-feature-images-container img{
+        width: 100%;
+    }
+
+    .experience {
+        margin-left:0px;
+        margin-top: 20px;
+    }
 }
+
 /* Medium devices */
 
 @media screen and (min-width:576px) and (max-width: 992px) {
-    .feature-container {
+
+    .feature-container,
+    .Enjoyable-feature-container {
         flex-direction: column;
+    }
+
+    .Enjoyable-feature-images-container img{
+        width:100%;
+    }
+    .experience {
+        margin-left:0px;
+        margin-top: 20px;
     }
 }
